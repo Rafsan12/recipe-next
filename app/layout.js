@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import FooterPage from "./Footer/page";
 import "./globals.css";
 import HeaderPage from "./Header/page";
 
@@ -23,7 +24,8 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="bg-white">
           <HeaderPage />
-          {children}
+          <main class="container mx-auto px-4 mt-[100px]">{children}</main>
+          <FooterPage />
         </div>
       </body>
     </html>
