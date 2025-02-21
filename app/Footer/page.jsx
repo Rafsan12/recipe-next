@@ -14,6 +14,7 @@ export default function FooterPage() {
                   width={100}
                   height={100}
                   className="h-10"
+                  alt=""
                 />
               </Link>
               <p className="text-gray-600 mt-2 text-sm">
