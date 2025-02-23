@@ -2,11 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import FooterPage from "./Footer/page";
 import "./globals.css";
 import HeaderPage from "./Header/page";
-import BannerPage from "./Home/Banner/Page";
-import CategoriesPage from "./Home/Categories/page";
-import InboxPage from "./Home/Inbox/page";
-import LatestPage from "./Home/Latest/page";
-import PopularPage from "./Home/Popular/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,14 +24,9 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="bg-white">
           <HeaderPage />
-          <main className="container mx-auto px-4 mt-[100px]">
-            <BannerPage />
-            <PopularPage />
-            <CategoriesPage />
-            <InboxPage />
-            <LatestPage />
-            {children}
-          </main>
+
+          {children}
+
           <FooterPage />
         </div>
       </body>
