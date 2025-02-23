@@ -11,14 +11,14 @@ export default function HeaderPage() {
           </Link>
           <ul className="hidden md:flex space-x-6">
             <li>
-              <a href="./index.html" className="hover:text-orange-500">
+              <Link href="/" className="hover:text-orange-500">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./category.html" className="hover:text-orange-500">
+              <Link href={`/categories`} className="hover:text-orange-500">
                 Categories
-              </a>
+              </Link>
             </li>
             <li>
               <a href="./recipes.html" className="hover:text-orange-500">
