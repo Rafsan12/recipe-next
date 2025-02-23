@@ -21,9 +21,9 @@ export default function HeaderPage() {
               </Link>
             </li>
             <li>
-              <a href="./recipes.html" className="hover:text-orange-500">
+              <Link href={`/recipes`} className="hover:text-orange-500">
                 Latest Recipes
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="flex items-center space-x-4">

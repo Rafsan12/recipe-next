@@ -2,7 +2,7 @@ import { getCategoriesById } from "@/utlis/getCategorisById";
 import { getRecipeById } from "@/utlis/getRecipeById";
 import Image from "next/image";
 
-export default async function ({ params }) {
+export default async function CategoryDetails({ params }) {
   const { id } = await params;
   const category = await getCategoriesById(id);
   // console.log("Category:", category);
@@ -34,7 +34,7 @@ export default async function ({ params }) {
               className="bg-white rounded-lg overflow-hidden shadow-md"
             >
               <Image
-                src={`/assets/thumbs/${item.thumbnail}`}
+                src={`/thumbs/${item.thumbnail}`}
                 alt={item.title}
                 width={100}
                 height={100}
